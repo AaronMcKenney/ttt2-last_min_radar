@@ -4,7 +4,7 @@ Source: [url=https://github.com/AaronMcKenney/ttt2-last_min_radar]https://github
  
 The Last Minute Radar will give all remaining players a radar once both of these conditions are met:
 1. A certain amount of time has passed (5 minutes by default)
-2. A certain number of players are left (3 by default)
+2. A certain number of players (or less) are left (3 by default)
  
 This addon will assist the remaining players in their attempts to find each other, which may otherwise be difficult for large maps.
  
@@ -12,7 +12,7 @@ This addon will assist the remaining players in their attempts to find each othe
 [code]# How much time (in seconds) a game must go on for until a Last Minute Radar can be considered?
   ttt2_last_min_radar_timeout [0..n] (default: 300)
 # How many players (or less) must remain until a Last Minute Radar can be considered?
-  ttt2_last_min_radar_min_plys [0..n] (default: 3)
+  ttt2_last_min_radar_min_plys [0..n] (default: 3)[/code]
  
 --
 [h1]Credits:[/h1]
