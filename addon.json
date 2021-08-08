@@ -1,0 +1,13 @@
+{
+	"title"		:	"[TTT2] Last Minute Radar",
+	"type"		:	"ServerContent",
+    "tags"		:	[ "roleplay", "fun" ],
+    "ignore"    : [
+        ".git/*",
+        ".gitignore",
+        "README.md",
+        "ttt2-last_min_radar.jpg",
+        "ttt2-last_min_radar.png",
+        "ttt2-last_min_radar.txt"
+    ]
+}
