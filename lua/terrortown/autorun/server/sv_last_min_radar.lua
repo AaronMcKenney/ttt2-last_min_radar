@@ -11,7 +11,7 @@ end
 local function GetNumParticipatingPlayers()
 	local n = 0
 	for _, ply in ipairs(player.GetAll()) do
-		if (ply:Alive() or ply:IsReviving()) and not ply:IsSpec() and not IsInSpecDM(ply) then
+		if ply:Alive() and not ply:IsSpec() and not IsInSpecDM(ply) then
 			n = n + 1
 		end
 	end
@@ -29,8 +29,9 @@ local function LastMinuteRadar()
 	end
 	
 	last_min_radar_triggered = true
+	local evil_only = GetConVar("ttt2_last_min_radar_evil_only"):GetBool()
 	for _, ply in ipairs(player.GetAll()) do
-		if ply:Alive() and not ply:IsSpec() and not IsInSpecDM(ply) then
+		if ply:Alive() and not ply:IsSpec() and not IsInSpecDM(ply) and (not evil_only or (ply:GetTeam() ~= TEAM_INNOCENT and ply:GetTeam() ~= TEAM_NONE)) then
 			ply:GiveEquipmentItem("item_ttt_radar")
 		end
 		

@@ -132,3 +132,4 @@ end
 local last_min_radar_cfg = ConvarGroup("Last Minute Radar", "Last Minute Radar for TTT2")
 Convar(last_min_radar_cfg, false, "ttt2_last_min_radar_timeout", "300", {FCVAR_SERVER_CAN_EXECUTE, FCVAR_NOTIFY, FCVAR_ARCHIVE}, "How many seconds until a Last Minute Radar can be handed out", "int", 0, 600, 0)
 Convar(last_min_radar_cfg, false, "ttt2_last_min_radar_min_plys", "3", {FCVAR_SERVER_CAN_EXECUTE, FCVAR_NOTIFY, FCVAR_ARCHIVE}, "How many players must be left until a Last Minute Radar can be handed out", "int", 0, 32, 0)
+Convar(last_min_radar_cfg, false, "ttt2_last_min_radar_evil_only", "0", {FCVAR_SERVER_CAN_EXECUTE, FCVAR_NOTIFY, FCVAR_ARCHIVE}, "Should only players that aren't on TEAM_INNOCENT and TEAM_NONE get the radar?", "bool", 0, 1, 0)
