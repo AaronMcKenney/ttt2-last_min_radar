@@ -1,6 +1,6 @@
 [URL=https://steamcommunity.com/sharedfiles/filedetails/?id=1357204556]TTT2[/URL] Required
  
-Source: [url=https://github.com/AaronMcKenney/ttt2-last_min_radar]https://github.com/AaronMcKenney/ttt2-last_min_radar[/url]
+Source: [url=https://github.com/AaronMcKenney/ttt2-last_min_radar]https://github.com/AaronMcKenney/ttt2-last_min_radar][/url]
  
 The Last Minute Radar will give all remaining players a radar once both of these conditions are met:
 1. A certain amount of time has passed (5 minutes by default)
@@ -12,9 +12,7 @@ This addon will assist the remaining players in their attempts to find each othe
 [code]# How much time (in seconds) a game must go on for until a Last Minute Radar can be considered?
   ttt2_last_min_radar_timeout [0..n] (default: 300)
 # How many players (or less) must remain until a Last Minute Radar can be considered?
-  ttt2_last_min_radar_min_plys [0..n] (default: 3)
-# Should only players that aren't on TEAM_INNOCENT and TEAM_NONE get the radar (Ex. Traitors, Jackals, Jesters, etc.)?
-  ttt2_last_min_radar_evil_only [0/1] (default: 0)[/code]
+  ttt2_last_min_radar_min_plys [0..n] (default: 3)[/code]
  
 --
 [h1]Credits:[/h1]
